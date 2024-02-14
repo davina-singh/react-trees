@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Like() {
   const [like, setLike] = useState(false);
   return (
-    <div>
+    <div className="likeButton">
       <button
         onClick={() => {
           setLike(!like);

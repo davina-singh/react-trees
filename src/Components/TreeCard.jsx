@@ -24,8 +24,8 @@ export default function TreeCard({ treeName, imgLink, location }) {
         />
         <p>{location}</p>
         <Button className="button" />
-        <LikeButton />
-        {/* if modalOn is true then set the modal css styles */}
+        <LikeButton className="likeButton" />
+        {/* if modalOn is tr=e then set the modal css styles */}
         {modalOn && (
           <div className="modal" onClick={toggleModal}>
             <img src={imgLink} alt={treeName} style={{ width: "100%" }} />
